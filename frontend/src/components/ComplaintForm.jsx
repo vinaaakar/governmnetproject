@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mic, MapPin, ShieldCheck, Send, RefreshCw, Cpu, Building2, Map, ChevronRight, User, Phone, Mail, ChevronDown, ChevronUp, Lock, CheckCircle2, Clock, Activity, Navigation, ArrowRight } from 'lucide-react';
+import { Mic, MapPin, ShieldCheck, Send, RefreshCw, Cpu, Building2, Map, ChevronRight, User, Phone, Mail, ChevronDown, ChevronUp, Lock, CheckCircle2, Clock, Activity, Navigation, ArrowRight, AlertCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import api from '../utils/api';
 import { STATE_REGISTRY } from '../data/stateRegistry';
