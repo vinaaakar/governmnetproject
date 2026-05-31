@@ -19,7 +19,7 @@ const ViewStatus = () => {
     setLoading(true);
     try {
       const { data } = await api.get('/complaints/my');
-      setComplaints(data);
+      setComplaints(data.data || []);
     } catch (err) {
       console.error(err);
     } finally {
