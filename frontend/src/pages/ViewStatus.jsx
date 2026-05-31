@@ -29,6 +29,7 @@ const ViewStatus = () => {
 
   const filteredComplaints = complaints.filter(comp => 
     comp._id.toLowerCase().includes(searchQuery.toLowerCase()) || 
+    (comp.complaintId && comp.complaintId.toLowerCase().includes(searchQuery.toLowerCase())) ||
     comp.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     (comp.predictedDepartment && comp.predictedDepartment.toLowerCase().includes(searchQuery.toLowerCase()))
   );
